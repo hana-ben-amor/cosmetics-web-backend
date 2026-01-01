@@ -9,10 +9,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/sellers")
-@RequiredArgsConstructor
 public class SellerController {
 
     private final SellerService sellerService;
+
+    public SellerController(SellerService sellerService) {
+        this.sellerService = sellerService;
+    }
 
     @PostMapping
     public Seller createSeller(@RequestBody Seller seller)
