@@ -3,9 +3,11 @@ package com.cosmetics.shop.service.impl;
 import com.cosmetics.shop.entity.Product;
 import com.cosmetics.shop.repository.ProductRepository;
 import com.cosmetics.shop.service.ProductService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 
 

@@ -5,9 +5,11 @@ import com.cosmetics.shop.entity.Order;
 import com.cosmetics.shop.model.DeliveryStatus;
 import com.cosmetics.shop.repository.DeliveryRepository;
 import com.cosmetics.shop.service.DeliveryService;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
+@Service
 public class DeliveryServiceImpl implements DeliveryService {
 
     private final DeliveryRepository deliveryRepository;

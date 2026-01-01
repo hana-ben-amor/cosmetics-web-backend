@@ -8,10 +8,12 @@ import com.cosmetics.shop.repository.PaymentRepository;
 import com.cosmetics.shop.repository.ProductRepository;
 import com.cosmetics.shop.service.PaymentService;
 import com.cosmetics.shop.service.ProductService;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class PaymentServiceImpl implements PaymentService {
 
     private final PaymentRepository paymentRepository;

@@ -7,10 +7,12 @@ import com.cosmetics.shop.model.OrderStatus;
 import com.cosmetics.shop.repository.OrderRepository;
 import com.cosmetics.shop.service.OrderService;
 import com.cosmetics.shop.service.ProductService;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class OrderServiceImpl implements OrderService {
 
     private final OrderRepository orderRepository;
